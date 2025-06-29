@@ -1,6 +1,5 @@
 package com.devsuperior.dscommerce.dto;
 
-import com.devsuperior.dscommerce.entities.Category;
 import com.devsuperior.dscommerce.entities.Product;
 import jakarta.validation.constraints.*;
 
