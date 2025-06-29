@@ -6,13 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import java.net.URI;
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/products")
@@ -23,7 +18,7 @@ public class ProductController {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProductDTO> findByID(@RequestBody @PathVariable Long id){
-        ProductDTO dto = productService.findById(id); //retorna um objeto do tipo ProductDTO
+        ProductDTO dto = productService.findById(id);
         return ResponseEntity.ok(dto);
     }
 
