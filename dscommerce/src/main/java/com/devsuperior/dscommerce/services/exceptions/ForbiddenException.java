@@ -1,9 +1,9 @@
 package com.devsuperior.dscommerce.services.exceptions;
 
 @SuppressWarnings("serial")
-public class ResourceNotFoundException extends RuntimeException {
+public class ForbiddenException extends RuntimeException {
 
-    public ResourceNotFoundException(String msg) {
+    public ForbiddenException(String msg) {
         super(msg);
     }
 }
