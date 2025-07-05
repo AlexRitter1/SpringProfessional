@@ -1,8 +1,6 @@
 package com.devsuperior.dscommerce.entities;
-
-import com.devsuperior.dscommerce.DTO.ProductDTO;
+import com.devsuperior.dscommerce.dto.ProductDTO;
 import jakarta.persistence.*;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
